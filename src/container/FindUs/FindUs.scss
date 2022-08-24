@@ -1,0 +1,63 @@
+#FINDUS {
+    background-image: url("../../assets/bg.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    color: white;
+    align-items: center;
+
+    @media screen and (max-width: 1025px) {
+        flex-direction: column;
+        align-items: unset;
+    }
+
+    .findUs__text {
+        flex: 1;
+        & > h2 {
+            font-size: 6rem;
+            font-family: var(--font-base);
+            color: var(--color-golden);
+            letter-spacing: 0.04em;
+            margin: 4rem 0;
+        }
+
+        & > p {
+            font-size: 1.6rem;
+            letter-spacing: 0.04em;
+            line-height: 2.6rem;
+        }
+
+        & > .findUs__opening {
+            font-family: var(--font-base);
+            color: var(--color-golden);
+            margin: 3rem 0;
+            font-size: 2.6rem;
+            font-weight: 700;
+        }
+
+        & > button {
+            margin-top: 3rem;
+        }
+    }
+
+    .findUs__img {
+        flex: 1;
+        display: flex;
+
+        @media screen and (max-width: 1025px) {
+            margin-top: 4rem;
+        }
+        img {
+            margin: auto;
+            width: 80%;
+            height: 100%;
+            object-fit: cover;
+            @media screen and (max-width: 1025px) {
+                width: 100%;
+                max-width: 650px;
+            }
+        }
+    }
+}
