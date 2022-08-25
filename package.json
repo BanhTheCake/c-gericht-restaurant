@@ -7,10 +7,7 @@
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
     "framer-motion": "^7.2.1",
-<<<<<<< HEAD
     "lodash": "^4.17.21",
-=======
->>>>>>> 4f55e1e4110031d8fa9882f489eb8021501d6e9b
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
