@@ -51,12 +51,14 @@ const Intro = () => {
     }, [])
 
     const handleHover = useCallback(() => {
-        setIsHover(true);
+        if (!isHover) {
+            setIsHover(true);
+        }
         handleHoverDebounce()
-    }, [handleHoverDebounce]);
+    }, [handleHoverDebounce, isHover]);
 
     const handleMouseOut = useCallback(() => {
-      if (clearTimeHover.current) clearTimeout(clearTimeHover.current)
+    //   if (clearTimeHover.current) clearTimeout(clearTimeHover.current)
 
       setIsHover(false)
 
