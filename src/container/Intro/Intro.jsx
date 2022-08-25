@@ -1,4 +1,5 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import meal from '../../assets/meal.mp4';
 import './Intro.scss';
 import { GiPauseButton } from 'react-icons/gi';
@@ -54,7 +55,6 @@ const Intro = () => {
         setIsHover(true);
         handleHoverDebounce()
     }, [handleHoverDebounce]);
-
 
     const handleMouseOut = useCallback(() => {
       if (clearTimeHover.current) clearTimeout(clearTimeHover.current)
