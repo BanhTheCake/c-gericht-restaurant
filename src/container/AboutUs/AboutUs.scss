@@ -1,0 +1,84 @@
+#ABOUTUS {
+    background-image: url("../../assets/bg.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+    min-height: 100vh;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+
+    @media screen and (max-width: 1025px) {
+        flex-direction: column;
+    }
+
+    .about__layout {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        z-index: 0;
+        img {
+            width: 400px;
+            max-width: 80%;
+            margin: auto;
+        }
+    }
+
+    .about__text {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+
+        .subheading__title {
+            font-size: 6rem;
+            color: var(--color-golden);
+        }
+
+        .subheading__img {
+            margin-top: 0.4rem;
+            display: inline-flex;
+        }
+
+        & > p {
+            font-size: 1.6rem;
+            line-height: 3rem;
+            color: var(--color-grey);
+            margin: 2rem 0;
+        }
+
+        &.about__intro {
+            align-items: flex-end;
+
+            .subheading__title {
+                text-align: right;
+            }
+
+            .subheading__img {
+                margin-left: auto;
+                transform: rotate(180deg);
+            }
+
+            & > p {
+                text-align: right;
+            }
+        }
+    }
+
+    .about__img {
+        padding: 4rem 6rem;
+        z-index: 1;
+        height: 900px;
+        img {
+            height: 100%;
+        }
+    }
+}

@@ -1,0 +1,44 @@
+#INTRO {
+    .intro__video {
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.6);
+        .intro__overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.2s ease;
+
+            .intro__circle {
+                font-size: 3rem;
+                color: var(--color-white);
+                opacity: 0.5;
+                display: flex;
+                width: 70px;
+                height: 70px;
+                border: 2px solid var(--color-white);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                @media screen and (min-width: 2000px) {
+                    width: 120px;
+                    height: 120px;
+                }
+            }
+
+            &.active {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}

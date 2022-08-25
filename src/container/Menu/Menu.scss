@@ -1,0 +1,118 @@
+#MENU {
+    background-color: var(--color-black);
+    min-height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+    & #SUBHEADING {
+        justify-content: center;
+        align-items: center;
+        .subheading__title {
+            text-align: center;
+        }
+    }
+
+    .menu__title {
+        font-size: 7rem;
+        font-family: var(--font-base);
+        font-weight: 700;
+        color: var(--color-golden);
+        letter-spacing: 0.04em;
+        text-align: center;
+        padding: 2rem 0;
+        margin-bottom: 4rem;
+    }
+
+    .menu__wrapper {
+        display: flex;
+
+        @media screen and (max-width: 1125px) {
+            flex-direction: column;
+        }
+    }
+
+    .menu__table {
+        flex: 1;
+        & > p {
+            font-size: 4rem;
+            text-align: center;
+            margin-bottom: 6rem;
+            font-family: var(--font-base);
+            font-weight: 700;
+            letter-spacing: 0.04em;
+        }
+    }
+
+    .menu__img {
+        flex-shrink: 0;
+        width: 450px;
+        padding: 0rem 3rem;
+        display: flex;
+
+        @media screen and (min-width: 2000px) {
+            width: 800px;
+        }
+
+        @media screen and (max-width: 1125px) {
+            width: 100%;
+            padding: 3rem;
+            padding-bottom: 6rem;
+        }
+
+        img {
+            width: 100%;
+            margin: auto;
+            object-fit: cover;
+
+            @media screen and (max-width: 1125px) {
+                width: 410px;
+                height: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+
+    .menu__wrapper {
+        display: flex;
+    }
+
+    .menu__item {
+        width: 100%;
+        margin-bottom: 3rem;
+        .menu__item-info {
+            display: flex;
+            align-items: center;
+            font-size: 2.2rem;
+            margin-bottom: 0.6rem;
+            letter-spacing: 0.04em;
+
+            & > p:first-child {
+                font-family: var(--font-base);
+                display: flex;
+                flex: 1;
+                color: var(--color-golden);
+                font-weight: 700;
+                line-height: 2.6rem;
+            }
+
+            & > div {
+                display: flex;
+                width: 80px;
+                height: 1px;
+                background-color: var(--color-golden);
+                margin: 0 1.6rem;
+            }
+        }
+
+        .menu__item_tag {
+            font-size: 1.6rem;
+            color: var(--color-grey);
+        }
+    }
+
+    & > button {
+        margin: auto;
+        margin-top: 8rem;
+    }
+}
