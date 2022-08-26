@@ -12,6 +12,7 @@ const Header = () => {
         <p>Sit Tellus Lobortis Sed Senectus Vivamus Molestie. Condimentum Volutpat Morbi Facilisis Quam Scelerisque Sapien. Et, Penatibus Aliquam Amet Tellus</p>
         <Button title="Explore Menu" />
       </div>
+
       <div className="home__img">
         <img src={images.welcome} alt="" />
       </div>
